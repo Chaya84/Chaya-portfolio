@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f2ea; /* light beige */
+    color:#1f2937; /* dark slate text */
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 50px;
+    background:#efe7db; /* soft beige nav */
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#1f2937;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+button {
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#b5894a; /* warm beige accent */
+    color:#ffffff;
+    cursor:pointer;
+    border-radius:5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background:#9e7035;
+    transform: scale(1.05);
+}
+
+
+section{
+    padding:80px 100px;
+}
+
+.skill{
+    background:#fffdf8;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #e6dccf;
+}
+
+.project-card {
+    background:#fffdf8;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+    transition: 0.3s;
+    border:1px solid #e6dccf;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    background:#efe4d4;
+}
+
+nav ul li a:hover {
+    color: #b5894a;
+    transition: 0.3s;
+}
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+#about p {
+    line-height: 1.8;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid  #9e7035;
+    margin-bottom: 20px;
+}
